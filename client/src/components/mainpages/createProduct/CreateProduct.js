@@ -8,8 +8,8 @@ const initialState = {
     product_id: '',
     title: '',
     price: 0,
-    description: 'How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.',
-    content: 'Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.',
+    description: '',
+    content: '',
     category: '',
     _id: ''
 }
@@ -51,16 +51,16 @@ function CreateProduct() {
     const handleUpload = async e =>{
         e.preventDefault()
         try {
-            if(!isAdmin) return alert("You're not an admin")
+            if(!isAdmin) return alert("Vous êtes pas un administrateur")
             const file = e.target.files[0]
             
-            if(!file) return alert("File not exist.")
+            if(!file) return alert("Fichier introuvable")
 
-            if(file.size > 1024 * 1024) // 1mb
-                return alert("Size too large!")
+            if(file.size > 2028 * 2028) // 1mb
+                return alert("Taille est trop grand!")
 
             if(file.type !== 'image/jpeg' && file.type !== 'image/png') // 1mb
-                return alert("File format is incorrect.")
+                return alert("Format image est incorrecte.")
 
             let formData = new FormData()
             formData.append('file', file)
@@ -79,7 +79,7 @@ function CreateProduct() {
 
     const handleDestroy = async () => {
         try {
-            if(!isAdmin) return alert("You're not an admin")
+            if(!isAdmin) return alert("Vous êtes pas un administrateur")
             setLoading(true)
             await axios.post('/api/destroy', {public_id: images.public_id}, {
                 headers: {Authorization: token}
@@ -99,8 +99,8 @@ function CreateProduct() {
     const handleSubmit = async e =>{
         e.preventDefault()
         try {
-            if(!isAdmin) return alert("You're not an admin")
-            if(!images) return alert("No Image Upload")
+            if(!isAdmin) return alert("Vous êtes pas un administrateur")
+            if(!images) return alert("Pas d'image pour hébérger")
 
             if(onEdit){
                 await axios.put(`/api/products/${product._id}`, {...product, images}, {
@@ -138,39 +138,39 @@ function CreateProduct() {
 
             <form onSubmit={handleSubmit}>
                 <div className="row">
-                    <label htmlFor="product_id">Product ID</label>
+                    <label htmlFor="product_id">ID Produit</label>
                     <input type="text" name="product_id" id="product_id" required
                     value={product.product_id} onChange={handleChangeInput} disabled={onEdit} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="title">Title</label>
+                    <label htmlFor="title">Titre :</label>
                     <input type="text" name="title" id="title" required
                     value={product.title} onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="price">Price</label>
+                    <label htmlFor="price">Prix :</label>
                     <input type="number" name="price" id="price" required
                     value={product.price} onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="description">Description</label>
+                    <label htmlFor="description">Description :</label>
                     <textarea type="text" name="description" id="description" required
                     value={product.description} rows="5" onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="content">Content</label>
+                    <label htmlFor="content">Contenu :</label>
                     <textarea type="text" name="content" id="content" required
                     value={product.content} rows="7" onChange={handleChangeInput} />
                 </div>
 
                 <div className="row">
-                    <label htmlFor="categories">Categories: </label>
+                    <label htmlFor="categories">Catégorie : </label>
                     <select name="category" value={product.category} onChange={handleChangeInput} >
-                        <option value="">Please select a category</option>
+                        <option value="">Sélectionner une catégorie</option>
                         {
                             categories.map(category => (
                                 <option value={category._id} key={category._id}>
@@ -181,7 +181,7 @@ function CreateProduct() {
                     </select>
                 </div>
 
-                <button type="submit">{onEdit? "Update" : "Create"}</button>
+                <button type="submit">{onEdit? "Modifier" : "Ajouter"}</button>
             </form>
         </div>
     )

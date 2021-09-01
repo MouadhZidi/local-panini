@@ -41,7 +41,7 @@ function Register() {
 
                 <div className="row">
                     <button type="submit">Register</button>
-                    <Link to="/login">Login</Link>
+                    <Link to="/login">Inscription</Link>
                 </div>
             </form>
         </div>

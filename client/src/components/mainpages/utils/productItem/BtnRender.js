@@ -15,18 +15,18 @@ function BtnRender({product, deleteProduct}) {
                 <>
                     <Link id="btn_buy" to="#!" 
                     onClick={() =>deleteProduct(product._id, product.images.public_id)}>
-                        Delete
+                        Supprimer
                     </Link>
                     <Link id="btn_view" to={`/edit_product/${product._id}`}>
-                        Edit
+                        Modifier
                     </Link>
                 </>
                 : <>
                     <Link id="btn_buy" to="#!" onClick={() => addCart(product)}>
-                        Buy
+                        Acheter
                     </Link>
                     <Link id="btn_view" to={`/detail/${product._id}`}>
-                        View
+                        Voir
                     </Link>
                 </>
             }
