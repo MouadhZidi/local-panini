@@ -9,6 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -57,6 +58,13 @@ button{
 
 /* ------------------- Create Product -------------- */
 @import url("./components/mainpages/createProduct/createProduct.css");
+
+/* ------------------- Footer -------------- */
+@import url("./components/headers/Footer.css");
+
+/* ------------------- Accueil -------------- */
+@import url("./components/mainpages/accueil/Accueil.css");
+
 
 /* ----------------- Responsive ------------------ */
 @media (max-width: 820px){
@@ -108,6 +116,8 @@ button{
   .App{
     padding: 0 10px;
   }
+
+  
   .detail{
     font-size: 100%;
     padding: 0;
@@ -131,5 +141,44 @@ button{
   }
   .create_product .upload{
     margin: 20px 0;
+  }
+  .list-inline-item{
+    
+    font-size: 10px;
+  }
+
+  
+  #btn-welcome{
+   
+ 
+    font-size: 20px;
+   margin-top: 100px;
+    margin-left: 37%;
+    
+    
+   
+    
+  }
+
+  .para{
+    padding-top: 20px;
+    margin: 0 0 ;
+    background-color: rgb(0, 0, 0 , 0.5);
+    margin-bottom: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+
+    
+  }
+  .titre{
+    margin: 0 0;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0 , 0.5);
+    margin-left: 3px;
+    margin-right: 3px;
+ 
+
+    
+
   }
 }

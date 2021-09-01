@@ -21,12 +21,13 @@ const Accueil = () => {
         <div className="para">
         Bienvenu au SnapFood:
         </div>
-        <div className="welcome">
-        <Link to="/product"><button id="btn-welcome">Découvrir</button></Link>
-          </div>
+        
         <div className="titre">
             <p>Café & Resto <br></br><span style={{paddingLeft:"120px"}}>SnapFood</span></p>
         </div>
+        <div className="welcome">
+        <Link to="/product"><button id="btn-welcome">Découvrir</button></Link>
+          </div>
        
          
          

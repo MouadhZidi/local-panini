@@ -66,3 +66,7 @@
     color:#aaa;
     margin-bottom:0;
   }
+
+  .list-inline-item{
+    display: flex;
+  }

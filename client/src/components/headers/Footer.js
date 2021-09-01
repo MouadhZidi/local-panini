@@ -23,7 +23,7 @@ const Footer = () => {
               <li className="list-inline-item"><a href="#">Terms</a></li>
               <li className="list-inline-item"><a href="#">Privacy Policy</a></li>
             </ul>
-            <p className="copyright">Lusso Design © 2021</p>
+            <div className="copyright">Lusso Design © 2021</div>
           </footer>
         </div>
       );
