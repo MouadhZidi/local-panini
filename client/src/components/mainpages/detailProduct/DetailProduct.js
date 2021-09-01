@@ -31,7 +31,7 @@ function DetailProduct() {
                         <h2>{detailProduct.title}</h2>
                         <h6>#Id: {detailProduct.product_id}</h6>
                     </div>
-                    <span>€ {detailProduct.price}</span>
+                    <span style={{color:"red"}}>{detailProduct.price}€ </span>
                     <p>{detailProduct.description}</p>
                     <p>{detailProduct.content}</p>
                     <p>Solde: {detailProduct.sold}</p>

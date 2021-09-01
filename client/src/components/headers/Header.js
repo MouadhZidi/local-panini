@@ -5,6 +5,7 @@ import Close from './icon/close.svg'
 import Cart from './icon/cart.svg'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
+import Logo from './icon/logo.jpeg'
 
 function Header() {
     const state = useContext(GlobalState)
@@ -52,7 +53,9 @@ function Header() {
 
             <div className="logo">
                 <h1>
-                    <Link to="/">{isAdmin ? 'Admin' : 'Lusso Design'}</Link>
+                    <Link to="/">{isAdmin ? 'Admin' : 'SnapFood'}</Link>
+                
+              <img src={Logo} alt="logo" style={{ height: 60 , paddingTop:"10px"}}/>
                 </h1>
             </div>
 

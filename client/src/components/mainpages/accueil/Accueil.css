@@ -7,10 +7,12 @@
     padding-top: 100px;
 }
 .titre{
-    color: white;
+   color :rgb(233, 163, 12);
     font-size: 65px;
     margin-left: 100px;
     font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+    padding-top: 150px;
+
     
 }
 
