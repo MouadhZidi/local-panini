@@ -27,8 +27,8 @@ border-radius: 5px;
 font-family: 'Amiri', serif;
 transition-duration: 0.4s;
 position: absolute;
-left:850px;
-top:100px;
+left:75%;
+top: 30%;
 }
 
 #btn-welcome:hover {
