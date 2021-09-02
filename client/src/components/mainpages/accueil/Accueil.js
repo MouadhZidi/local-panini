@@ -14,7 +14,7 @@ const Accueil = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
            
-            height: "80vh",
+            height: "72vh",
           }}
         >
          
