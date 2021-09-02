@@ -22,7 +22,7 @@ const Accueil = () => {
         
         
         <div className="titre">
-           <span style={{paddingLeft:"75px"}}>SnapFood</span>
+           <span>SnapFood</span>
         </div>
         <Carossel/>
         <div className="welcome">
