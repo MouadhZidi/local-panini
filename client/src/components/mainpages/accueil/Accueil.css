@@ -10,8 +10,9 @@
    color :rgb(233, 163, 12);
     font-size: 65px;
     margin-left: 100px;
+    text-decoration: solid !important;
     font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
-    padding-top: 150px;
+    
 
     
 }
@@ -20,12 +21,14 @@
 #btn-welcome{
     padding-left: 12px;
     padding-right:12px;
-margin-left: 800px;
 font-size: 25px;
 background-color: rgb(255, 255, 255);
 border-radius: 5px;
 font-family: 'Amiri', serif;
 transition-duration: 0.4s;
+position: absolute;
+left:850px;
+top:100px;
 }
 
 #btn-welcome:hover {

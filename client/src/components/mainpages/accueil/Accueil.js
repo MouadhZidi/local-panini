@@ -2,10 +2,11 @@ import React from 'react'
 import Bg from '../../headers/icon/bg.jpeg'
 import {Link} from 'react-router-dom'
 import './Accueil.css'
+import Carossel from '../carossel/Carossel'
 
 const Accueil = () => {
     return (
-        <div>
+        
         <div
           style={{
             backgroundImage: `url(${Bg})`,
@@ -18,20 +19,19 @@ const Accueil = () => {
         >
          
           
-        <div className="logo">
-          
-        </div>
+        
         
         <div className="titre">
-           <span style={{paddingLeft:"120px"}}>SnapFood</span>
+           <span style={{paddingLeft:"75px"}}>SnapFood</span>
         </div>
+        <Carossel/>
         <div className="welcome">
         <Link to="/product"><button id="btn-welcome">Découvrir</button></Link>
           </div>
-       
+      
          
          
-        </div>
+        
   
         
       </div>

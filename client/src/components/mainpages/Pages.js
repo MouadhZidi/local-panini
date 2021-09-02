@@ -13,6 +13,7 @@ import CreateProduct from './createProduct/CreateProduct'
 
 import {GlobalState} from '../../GlobalState'
 import Accueil from './accueil/Accueil'
+import Carossel from './carossel/Carossel'
 
 
 function Pages() {
@@ -22,11 +23,14 @@ function Pages() {
 
 
     return (
+        <div>
+        
         <Switch>
+        
             <Route path="/" exact component={Accueil}/>
             <Route path="/product" exact component={Products} />
             <Route path="/detail/:id" exact component={DetailProduct} />
-
+            <Route path="/carr" exact component={Carossel}/>
             <Route path="/login" exact component={isLogged ? NotFound : Login} />
             <Route path="/register" exact component={isLogged ? NotFound : Register} />
 
@@ -42,6 +46,7 @@ function Pages() {
 
             <Route path="*" exact component={NotFound} />
         </Switch>
+        </div>
     )
 }
 

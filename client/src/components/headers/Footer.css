@@ -9,7 +9,7 @@
     list-style:none;
     text-align:center;
     font-size:18px;
-    line-height:1.6;
+    line-height:0.5;
     margin-bottom:0;
     display: flex;
     justify-content: center;
@@ -63,7 +63,7 @@
     margin-top:15px;
     text-align:center;
     font-size:13px;
-    color:#aaa;
+    color:rgb(145, 145, 145);
     margin-bottom:0;
   }
 
