@@ -14,7 +14,7 @@ const Accueil = () => {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
            
-            height: "65vh",
+            height: "80vh",
           }}
         >
          
@@ -22,7 +22,7 @@ const Accueil = () => {
         
         
         <div className="titre">
-           <span>SnapFood</span>
+           <span>Restaurant SnapFood</span>
         </div>
         <Carossel/>
         <div className="welcome">

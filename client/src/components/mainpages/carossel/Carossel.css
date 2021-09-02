@@ -105,7 +105,9 @@
     margin-bottom: 70px;
 }
 .product-card img {
-    width: 100%;
+    width: 120%;
+    position: center;
+    left:20px;
 }
 .product-card:nth-child(1) {
     transform: translate3d(0, 0, -15px);
