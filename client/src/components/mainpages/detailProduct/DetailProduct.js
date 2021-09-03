@@ -32,7 +32,7 @@ function DetailProduct() {
                         <h6>#Id: {detailProduct.product_id}</h6>
                     </div>
                     <span style={{color:"red"}}>{detailProduct.price}€ </span>
-                    <p>{detailProduct.description}</p>
+                    {/* <p>{detailProduct.description}</p> */}
                     <p>{detailProduct.content}</p>
                     <p>Solde: {detailProduct.sold}</p>
                     <Link to="/cart" className="cart"

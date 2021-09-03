@@ -18,7 +18,7 @@ function Filters() {
     return (
         <div className="filter_menu">
             <div className="row">
-                <span>Filters: </span>
+                <span style={{color:"white"}}>Filtres: </span>
                 <select name="category" value={category} onChange={handleCategory} >
                     <option value=''>Tout les produits</option>
                     {
@@ -35,7 +35,7 @@ function Filters() {
             onChange={e => setSearch(e.target.value.toLowerCase())} />
 
             <div className="row sort">
-                <span>Trier par : </span>
+                <span style={{color:"white"}}>Trier par : </span>
                 <select value={sort} onChange={e => setSort(e.target.value)} >
                     <option value=''>Le plus récent</option>
                     <option value='sort=oldest'>Le plus ancien</option>

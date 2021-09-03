@@ -123,6 +123,7 @@ function CreateProduct() {
     }
     return (
         <div className="create_product">
+            <p style={{color:"white"}}>Selectionner une image:</p>
             <div className="upload">
                 <input type="file" name="file" id="file_up" onChange={handleUpload}/>
                 {
@@ -136,12 +137,12 @@ function CreateProduct() {
                 
             </div>
 
-            <form onSubmit={handleSubmit}>
-                <div className="row">
-                    <label htmlFor="product_id">ID Produit</label>
+            <form onSubmit={handleSubmit} style={{color:"white"}}>
+                {/* <div className="row" >
+                    <label htmlFor="product_id" >ID Produit</label>
                     <input type="text" name="product_id" id="product_id" required
                     value={product.product_id} onChange={handleChangeInput} disabled={onEdit} />
-                </div>
+                </div> */}
 
                 <div className="row">
                     <label htmlFor="title">Titre :</label>
@@ -155,11 +156,11 @@ function CreateProduct() {
                     value={product.price} onChange={handleChangeInput} />
                 </div>
 
-                <div className="row">
+                {/* <div className="row">
                     <label htmlFor="description">Description :</label>
                     <textarea type="text" name="description" id="description" required
                     value={product.description} rows="5" onChange={handleChangeInput} />
-                </div>
+                </div> */}
 
                 <div className="row">
                     <label htmlFor="content">Contenu :</label>
