@@ -100,14 +100,12 @@
     transform-style: preserve-3d;
     margin-top: -50px;
 }
-.product-card {
-    max-width: 300px;
-    margin-bottom: 70px;
-}
+
 .product-card img {
     width: 120%;
     position: center;
-    left:20px;
+    margin-left: -8px;
+    
 }
 .product-card:nth-child(1) {
     transform: translate3d(0, 0, -15px);

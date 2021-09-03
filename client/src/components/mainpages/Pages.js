@@ -17,6 +17,7 @@ import Carossel from './carossel/Carossel'
 import ContactUs from './contactus/ContactUs'
 
 
+
 function Pages() {
     const state = useContext(GlobalState)
     const [isLogged] = state.userAPI.isLogged
@@ -29,6 +30,7 @@ function Pages() {
         <Switch>
         
             <Route path="/" exact component={Accueil}/>
+         
             <Route path="/product" exact component={Products} />
             <Route path="/detail/:id" exact component={DetailProduct} />
             <Route path="/carr" exact component={Carossel}/>

@@ -11,7 +11,7 @@ const Accueil = () => {
           style={{
             backgroundImage: `url(${Bg})`,
             backgroundPosition: "center",
-            backgroundSize: "cover",
+            backgroundSize: "90%",
             backgroundRepeat: "no-repeat",
            
             height: "72vh",
@@ -22,7 +22,7 @@ const Accueil = () => {
         
         
         <div className="titre">
-           <span>Restaurant SnapFood</span>
+           <span>|</span>
         </div>
         <Carossel/>
         <div className="welcome">

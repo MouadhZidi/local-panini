@@ -28,7 +28,7 @@ function Login() {
     return (
         <div className="login-page">
             <form onSubmit={loginSubmit}>
-                <h2>Login</h2>
+                <h2>Se Connecter</h2>
                 <input type="email" name="email" required
                 placeholder="Email" value={user.email} onChange={onChangeInput} />
 
@@ -36,7 +36,7 @@ function Login() {
                 placeholder="Password" value={user.password} onChange={onChangeInput} />
 
                 <div className="row">
-                    <button type="submit">Login</button>
+                    <button type="submit">Se connecter</button>
                     <Link to="/register">Inscription</Link>
                 </div>
             </form>
